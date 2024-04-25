@@ -72,6 +72,7 @@ div.card-one {
 }
 /* Second card layout */
 div.card-two {
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,6 +81,9 @@ div.card-two {
 div.card-two>div.text{
   margin-bottom: 10px;
   font-size: var(--Font_size);
+}
+div.box_carga{
+  height: 55px;
 }
 div.carga {
   display: flex;
@@ -120,12 +124,16 @@ div.spam{
   align-items: center;
   justify-content: center;
   margin: auto;
-  height: 60px;
+  margin-top: 10px;
+  height: 80px;
   width: 200px;
   font-size: 30px;
   color: var(--Very_Dark_Blue);
   background-color: var(--Pale_Blue);
-  border-radius: 20px;
+  border-radius: 10px;
+  /* position: relative; */
+  /* top: 40px; */
+
 }
 div.spam>span{
   font-size: small;
