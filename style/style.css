@@ -70,11 +70,68 @@ div.card > div.icon-card {
 div.card-one {
   border-top-right-radius: 100px;
 }
-div.card-two{
+/* Second card layout */
+div.card-two {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+div.card-two>div.text{
+  margin-bottom: 10px;
+  font-size: var(--Font_size);
+}
+div.carga {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 25px;
+  background-color: var(--Very_Dark_Blue);
+  border-radius: 50px;
+}
+div.gradient_carga {
+  display: flex;
+  flex-direction: column;
+  align-content: end;
+  height: 20px;
+  width: 80%;
+  background: linear-gradient( to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  /* background: linear-gradient( red, blue); */
+  border-radius: 50px;
+  margin: 3px;
+}
+div.white_point {
+  align-self: end;
+  height: 18px;
+  width: 18px;
+  margin: 2px;
+  background-color: white;
+  border-radius: 50%;
+}
+/* containt porcent */
+div.containt{
+  font-size: var(--Font_size);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div.spam{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 60px;
+  width: 200px;
+  font-size: 30px;
+  color: var(--Very_Dark_Blue);
+  background-color: var(--Pale_Blue);
+  border-radius: 20px;
+}
+div.spam>span{
+  font-size: small;
+  margin: 10px;
+  color: var(--Grayish_Blue);
+  
 }
 body {
   height: 100dvh;
