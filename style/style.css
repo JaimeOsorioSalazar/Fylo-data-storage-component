@@ -26,13 +26,25 @@
   /*  Font 
  Family: [Raleway](https://fonts.google.com/specimen/Raleway) 
  - Weights: 400, 700
+
+  // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
  */
 }
-body {
+body{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Raleway", sans-serif;
 }
 .card {
   width: 80%;
@@ -89,31 +101,34 @@ div.carga {
   display: flex;
   align-items: center;
   width: 250px;
-  height: 25px;
+  height: 20px;
   background-color: var(--Very_Dark_Blue);
   border-radius: 50px;
+  padding: 3px;
 }
 div.gradient_carga {
   display: flex;
   flex-direction: column;
-  align-content: end;
-  height: 20px;
+  /* align-content: end; */
+  height: 15px;
   width: 80%;
   background: linear-gradient( to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   /* background: linear-gradient( red, blue); */
   border-radius: 50px;
-  margin: 3px;
+  /* margin: 3px; */
+
 }
 div.white_point {
   align-self: end;
-  height: 18px;
-  width: 18px;
+  height: 12px;
+  width: 12px;
   margin: 2px;
   background-color: white;
   border-radius: 50%;
 }
 /* containt porcent */
 div.containt{
+  margin-top: 10px;
   font-size: var(--Font_size);
   display: flex;
   flex-direction: row;
@@ -126,8 +141,8 @@ div.spam{
   margin: auto;
   margin-top: 10px;
   height: 80px;
-  width: 200px;
-  font-size: 30px;
+  width: 180px;
+  font-size: 40px;
   color: var(--Very_Dark_Blue);
   background-color: var(--Pale_Blue);
   border-radius: 10px;
@@ -140,6 +155,10 @@ div.spam>span{
   margin: 10px;
   color: var(--Grayish_Blue);
   
+}
+/* Attribution */
+div.attribution{
+  margin-top: 50px;
 }
 body {
   height: 100dvh;
