@@ -165,8 +165,10 @@ body {
 }
 @media (width <= 375px) {
   body {
-    background-color: red;
     background-image: url("/images/bg-mobile.png");
+  }
+  picture{
+    display: none;
   }
 }
 @media (376px <= width <= 1440px) {
@@ -174,5 +176,31 @@ body {
     background-image: url("/images/bg-desktop.png");
     background-repeat: no-repeat;
     /* background-size:cover ; */
+    background: var(--Very_Dark_Blue);
+    display: flex;
+    flex-direction: row;
+  }
+  picture{
+    height: 50%;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  div.card{
+    width: 20rem;
+  }
+  div.card-two{
+    width: 500px;
+    flex-direction: column;
+    align-items: start;
+  }
+  div.card-two>div{
+    margin-left: 20px;
+  }
+  div.box_carga{
+    
+  }
+  div.attribution{
+    display: none;
   }
 }
