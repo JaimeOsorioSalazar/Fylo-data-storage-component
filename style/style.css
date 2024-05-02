@@ -188,25 +188,34 @@ body {
   div.card {
     width: 20rem;
   }
+  div.card-one{
+    position: relative;
+    top: -24px;
+  }
   div.card-two {
-    width: 500px;
+    width: 500Px;
     flex-direction: column;
     align-items: start;
   }
   div.card-two > div {
-    margin-left: 20px;
+    margin-left: 30px;
   }
-  div.box_carga {
+  div.box_carga{
+    width: 90%;
+  }
+  div.box_carga>div.carga{
+    width: 95%;
   }
   div.attribution {
     display: none;
   }
   div.spam {
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     margin-top: 10px;
+    padding-left: 30px;
     height: 80px;
     width: 180px;
     font-size: 40px;
@@ -214,19 +223,20 @@ body {
     background-color: var(--Pale_Blue);
     border-radius: 10px;
     position: relative; 
-    top: -170px; 
-    left: 200px;
+    top: -180px; 
+    left: 120px;
   }
   div.spam::after{
     content: " ";
     width: 0px;
    height: 0px;
    border-style: solid;
-   border-width: 20px 50px 40px 0;
+   border-width: 10px 50px 40px 0;
    border-color: transparent var(--Pale_Blue) transparent transparent;
    transform: rotate(0deg);
    position: relative;
    top: 36px;
+   left: -9px;
 
   }
 }
