@@ -172,7 +172,7 @@ body {
 }
 @media (376px <= width <= 1440px) {
   body {
-    background-image: url("/images/bg-desktop.png");
+    /* background-image: url("/images/bg-desktop.png"); */
     background-repeat: no-repeat;
     /* background-size:cover ; */
     background: var(--Very_Dark_Blue);
