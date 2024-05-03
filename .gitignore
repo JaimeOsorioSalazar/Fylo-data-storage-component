@@ -12,7 +12,7 @@
 *.fig
 
 # Avoid your project being littered with annoying .DS_Store files!
-images
+# images
 README-template.md
 README.md
 style-guide.md
