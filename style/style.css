@@ -164,7 +164,7 @@ body {
 
 @media (width <= 375px) {
   body {
-    background-image: url("/images/bg-mobile.png");
+    background-image: url("images/bg-mobile.png");
   }
   picture {
     display: none;
